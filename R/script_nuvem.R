@@ -49,7 +49,7 @@ wordcloud(words = corpus$tsplit,
                     max.words = 500,
                     random.order = FALSE,
                     rot.per= 0.35,
-                    colors = brewer.pal(8, "Dark2"))
+                    colors = brewer.pal(8,'Dark2'))
 
 # Verificando em qual pasta você vai salvar sua nuvem
 
@@ -73,8 +73,8 @@ library(wordcloud2)
 
 nuvem2 <- wordcloud2(data = corpus,
                  size = 1.4,
-                 color='random-dark',
-                 backgroundColor = "mistyrose",
+                 color=brewer.pal(11, "Set3"),
+                 backgroundColor = "darkcyan",
                  minRotation = 0.2,
                  rotateRatio = 0.8)
 
