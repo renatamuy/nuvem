@@ -1,5 +1,4 @@
 # Nuvem de palavras
-# R 4.0.1
 # Renata Muylaert 2020
 
 if(!require(rvest)) install.packages("rvest", dependencies = TRUE)
@@ -15,7 +14,7 @@ library(webshot) # ajuda a salvar
 
 webshot::install_phantomjs()
 
-s <- read_html("https://marcoarmello.wordpress.com/2020/08/19/coronavirus6/")
+s <- read_html("https://marcoarmello.wordpress.com/2020/08/19/coronavirus6/") #você pode trocar pela URL do texto que pretende analisar
 
 t <- html_text(html_nodes(s, 'p,h1,h2,h3'))
 
@@ -41,7 +40,7 @@ padroes_indesejados <- c("como", "que", "com", "uma", "para", "sobre", "por", "a
 
 corpus <- corpus[!corpus$tsplit %in% padroes_indesejados,]
 
-# Criando a nuvem
+# Criando a nuvem simples
 
 wordcloud(words = corpus$tsplit,
                     freq = corpus$Freq,
@@ -51,11 +50,11 @@ wordcloud(words = corpus$tsplit,
                     rot.per= 0.35,
                     colors = brewer.pal(8,'Dark2'))
 
-# Verificando em qual pasta você vai salvar sua nuvem
+# Veja em qual pasta salvará as nuvens
 
 getwd()
 
-# Exportando a nuvem simplesinha
+# Exportando a nuvem simplezinha
 
 tiff(filename = "nuvem1.tif", width = 20, height = 10, res = 600, units = "cm")
 wordcloud(words = corpus$tsplit,
@@ -67,7 +66,7 @@ wordcloud(words = corpus$tsplit,
           colors = brewer.pal(8, "Dark2"))
 dev.off()
 
-# Criando uma nuvem com wordcloud2
+# Criando uma nuvem mais elaborada com wordcloud2
 
 library(wordcloud2)
 
@@ -78,17 +77,16 @@ nuvem2 <- wordcloud2(data = corpus,
                  minRotation = 0.2,
                  rotateRatio = 0.8)
 
-# Visualizando a nuvem
+# Visualizando a nuvem elaborada
 
 nuvem2
 
-# Salvando a nuvem em html e png
+# Salvando a nuvem elaborada em html e png
 
 saveWidget(nuvem2, "nuvem2.html", selfcontained = F)
 
 webshot("nuvem2.html", file = "nuvem2.png", cliprect = "viewport")
 
-# Para salvar a nuvem por clique (caso a função webshot não funcione no seu PC
-# por alguma limitação de administradores), clique em Export > Save as image > Save)
+# Para salvar a nuvem por clique (caso a função webshot não funcione no seu PC por alguma limitação de administradores), clique em Export > Save as image > Save)
 
 
