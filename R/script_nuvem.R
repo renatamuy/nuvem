@@ -1,5 +1,8 @@
 # Nuvem de palavras
-# Renata Muylaert 2020
+# Renata Muylaert 
+# 01/09/20
+
+# Pacotes
 
 if(!require(rvest)) install.packages("rvest", dependencies = TRUE)
 if(!require(wordcloud)) install.packages("wordcloud", dependencies = TRUE)
@@ -13,6 +16,8 @@ library(htmlwidgets) # salva em html
 library(webshot) # ajuda a salvar
 
 webshot::install_phantomjs()
+
+# Mineração de textos da internet e formando o bjeto corpus (conjunto de palavras a serem plotadas)
 
 s <- read_html("https://marcoarmello.wordpress.com/2020/08/19/coronavirus6/") #você pode trocar pela URL do texto que pretende analisar
 
@@ -37,6 +42,8 @@ remover <- nchar(corpus$tsplit) < 3
 corpus <- corpus[!remover,]
 
 padroes_indesejados <- c("como", "que", "com", "uma", "para", "sobre", "por", "até")
+
+# Versao final do corpus de palavras 
 
 corpus <- corpus[!corpus$tsplit %in% padroes_indesejados,]
 
