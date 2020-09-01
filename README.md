@@ -10,7 +10,7 @@ Blog Sobrevivendo na Ciência
 
 URL: https://marcoarmello.wordpress.com
 
-Autor: Renata Muylaert
+Autora: Renata Muylaert
 
 Publicado em 31 de agosto de 2020 (versão em português).
 
