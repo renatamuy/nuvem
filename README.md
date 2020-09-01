@@ -12,8 +12,6 @@ URL: https://marcoarmello.wordpress.com
 
 Autor: Renata Muylaert
 
-E-mail: renatamuy@gmail.com
-
 Publicado em 31 de agosto de 2020 (versão em português).
 
 Rodado no R version 4.0.2 (2020-06-22) -- "Taking Off Again"
