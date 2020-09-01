@@ -4,11 +4,9 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-Códigos de R usados no post "Como fazer uma nuvem de palavras"
+Códigos em R usados no post ["Como fazer uma nuvem de palavras"](https://marcoarmello.wordpress.com/2020/09/01/nuvemdepalavras/)
 
-Blog Sobrevivendo na Ciência
-
-URL: https://marcoarmello.wordpress.com
+[Blog Sobrevivendo na Ciência](https://marcoarmello.wordpress.com)
 
 Autora: Renata Muylaert
 
@@ -20,7 +18,7 @@ Aviso: Você pode usar este script livremente para fins não comerciais por seu 
 
 ## Crie nuvens de palavras no R utilizando `wordcloud()` e `wordcloud2()`
 
-Acesse o post no blog clicando [aqui](https://marcoarmello.wordpress.com/).
+Acesse o post no blog clicando [aqui](https://marcoarmello.wordpress.com/2020/09/01/nuvemdepalavras/).
 
 1. Instale o R e o RStudio no seu computador;
 2. Baixe o Rproject+script clicando em "Clone or download" e Depois em "Download ZIP". Se você tiver intimidade com o GitHub, alternativamente pode fazer um fork deste repositório;
