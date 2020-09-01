@@ -10,7 +10,7 @@ Blog Sobrevivendo na Ciência
 
 URL: https://marcoarmello.wordpress.com
 
-Autor: Renata Muylaert
+Autora: Renata Muylaert
 
 E-mail: renatamuy@gmail.com
 
