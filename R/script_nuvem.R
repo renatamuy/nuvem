@@ -94,6 +94,9 @@ saveWidget(nuvem2, "nuvem2.html", selfcontained = F)
 
 webshot("nuvem2.html", file = "nuvem2.png", cliprect = "viewport")
 
-# Para salvar a nuvem por clique (caso a função webshot não funcione no seu PC por alguma limitação de administradores), clique em Export > Save as image > Save)
+#################################################################################################
+# Pode ser que a função webshot não funcione no seu PC por alguma limitação de administradores! #
+# Para salvar a nuvem por clique: clique em Export > Save as image > Save)                      #
+#################################################################################################
 
 
